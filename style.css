@@ -1,0 +1,166 @@
+#coffeimg {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    background-size: cover;
+    background-position: center;
+}
+
+#coffeimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+.text-overlay {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 100%; 
+    padding: 0 20px; 
+}
+
+.responsive-h1 {
+    font-size: calc(2rem + 2vw); /* Responsive font size for h1 */
+    line-height: 1.2; /* Adjust line height for readability */
+}
+
+.responsive-p {
+    color: rgb(251, 251, 251);
+    font-size: calc(.8rem + 0.5vw); /* Responsive font size for p */
+    max-width: 60%; /* Ensure p doesn't exceed the width of h1 */
+    margin: 0 auto; /* Center the p text */
+}
+
+
+.text-overlay .custom-btn {
+    background-color: #4d3605; 
+    color: white; /* Text color */
+    border-radius: 30px;
+    height: 45px; 
+    border: none; 
+}
+
+.text-overlay .custom-btn:hover {
+    background-color: #251a01; 
+}
+
+.custom-icon {
+    color: #4d3605; /* Custom color for the icon */
+}
+
+/* Optional: Change icon color on hover */
+.custom-icon:hover {
+    color: #231801; /* Darker shade on hover */
+}
+
+.read-more .custom-btn {
+    background-color: #4d3605; 
+    color: white; /* Text color */
+    border-radius: 30px;
+    height: 45px; 
+    border: none; 
+}
+
+.read-more .custom-btn:hover {
+    background-color: #251a01;
+    color: white; 
+}
+.custom-img {
+    width: 100%; /* Ensures the image takes up the full width of its container */
+    height: auto; /* Maintains the aspect ratio */
+    max-width: 100%; /* Ensures the image doesn't exceed the container's width */
+    object-fit: cover; /* Optionally crop the image to fill the container */
+}
+
+
+
+
+
+
+
+
+
+
+
+.image-section {
+    position: relative;
+    background-image: url('assets/downc.jpg');
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+    height: 90vh; /* Adjust the height to your preference */
+    color: white; /* Text color */
+    display: flex;
+    
+     
+}
+
+.image-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(246, 246, 246, 0.826), rgba(255, 255, 255, 0)); 
+    z-index: 1; 
+}
+
+.content {
+    position: relative;
+    z-index: 2; /* Ensures the content is above the overlay */
+}
+
+
+
+.text-reset{
+    text-decoration: none;
+}
+
+.gallery-img {
+    width: 100%;
+    height: auto;
+    max-width: 60px; /* Adjust the size to make the images smaller */
+    max-height: 60px; /* Adjust the size to make the images smaller */
+    object-fit: cover; /* Ensure the images maintain aspect ratio */
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .image-section {
+        height: auto; 
+        padding: 40px 20px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .image-section {
+        height: auto; 
+        padding: 60px 20px; 
+    }
+}
+
